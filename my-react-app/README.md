@@ -1,16 +1,67 @@
-# React + Vite
+# React + Vite + Vitest - User Profile Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Описание проекта
 
-Currently, two official plugins are available:
+Проект создан с использованием React и Vite.  
+Реализован компонент, который выполняет асинхронный GET-запрос к API и отображает данные пользователя.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Компонент UserProfile получает данные с:
+https://jsonplaceholder.typicode.com/users/1
 
-## React Compiler
+Отображается:
+- имя пользователя
+- email пользователя
+- состояние загрузки
+- сообщение об ошибке при неудачном запросе
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Установка
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+npm install
+
+---
+
+## Запуск проекта
+
+npm run dev
+
+---
+
+## Запуск тестов
+
+npm run test
+
+---
+
+## Ссылка на GitHub репозиторий
+
+https://github.com/chebanilia2018-lab/React-Vitest-homework.git
+
+---
+
+## Ссылка на деплой (Vercel)
+
+https://my-react-app-phi-ashy.vercel.app
+
+---
+
+## Тесты проверяют
+
+- состояние загрузки
+- успешное получение данных пользователя
+- обработку ошибки
+- мокирование API-запроса
+
+---
+
+## Структура проекта
+```
+src/
+├── components/
+│ ├── UserProfile.jsx
+│ ├── UserProfile.test.jsx
+├── App.jsx
+├── main.jsx
+
+```
